@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Surya Prakash B
+* **Register Number**: 212224230281
+* **Date of Submission**: 13 - 02 -2025
 
 ---
 
@@ -96,13 +96,22 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+## Workflow: Amazon EC2 Lab
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+1. **Launch Instance**  
+   Create an EC2 instance named *Web Server*, select Amazon Linux AMI, choose `t2.micro`, configure the security group, enable termination protection, and add the user-data script to install the web server.
+
+2. **Monitor Instance**  
+   Ensure the instance reaches **Running (2/2 checks passed)** and review status checks, CloudWatch monitoring metrics, system logs, and instance screenshot.
+
+3. **Configure Access**  
+   Update the security group to allow **HTTP (port 80)** inbound traffic and access the web page using the instance’s public IPv4 address.
+
+4. **Resize Resources**  
+   Stop the instance, change the instance type to **t2.small**, enable stop protection, increase the EBS volume size (8 GiB → 10 GiB), and restart the instance.
+
+5. **Test Limits and Protection**  
+   Explore EC2 service quotas, test stop protection by attempting to stop the instance, disable stop protection if required, stop the instance, and submit the lab.
 
 ---
 
@@ -110,19 +119,22 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 ### Screenshot 1: EC2 Dashboard / Instance List
 
-(Insert Screenshot Here)
+<img width="1874" height="1054" alt="image" src="https://github.com/user-attachments/assets/f4dbe154-88d8-40b4-af59-54f92e0bc56f" />
+
 
 ---
 
 ### Screenshot 2: SSH Connection to Instance
 
-(Insert Screenshot Here)
+<img width="1873" height="1056" alt="image" src="https://github.com/user-attachments/assets/44e0d767-2216-4507-8521-37447c85c386" />
+
 
 ---
 
 ### Screenshot 3: Instance Monitoring / Status
 
-(Insert Screenshot Here)
+![i-013eb4037135eed9f](https://github.com/user-attachments/assets/cffe948b-e22b-4ed5-bbed-b5b61443b803)
+
 
 ---
 
